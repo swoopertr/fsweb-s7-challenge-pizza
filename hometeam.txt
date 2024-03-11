@@ -1,0 +1,14 @@
+ANA SAYFA 
+div conteynır oluştur
+div'in içine img ekleyeceğiz
+en üstte h2 onun altına h1
+acıktım butonu yapacağız butonun şeklini ayarlayacağız
+routing yapılacak acıktım butonu için
+home page stilini ayarlayacağız
+
+
+SİPARİŞ ONAYI
+- div in içerisinde backgroundcolor kırmızı olacak
+-sonrasında h2 ekleyeceğiz 
+-sonrasında h1
+-stilini ayarlayacağız
