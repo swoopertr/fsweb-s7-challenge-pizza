@@ -1,20 +1,14 @@
 import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 import RadioButtons from "./RadioButtons";
-import Dropdown from "./dropdown";
-const DoughType = [
-    { label: 'Action', href: '#' },
-    { label: 'Another action', href: '#' },
-    { label: 'Something else here', href: '#' }
-  ];
-
+import Dropdown from "./Dropdown";
 const ConsolidatedFormComponent = () => {
   const [isChecked, setIsChecked] = useState(false);
   const [selectedOption, setSelectedOption] = useState("");
-  const DoughType = [
-    { label: 'Action', href: '#' },
-    { label: 'Another action', href: '#' },
-    { label: 'Something else here', href: '#' }
+  const menuItems = [
+    { label: "Kalın", href: "Kalın" },
+    { label: "İnce", href: "#" },
+    { label: "Standart", href: "#" },
   ];
   const handleRadioChange = (event) => {
     setSelectedOption(event.target.id);
@@ -38,21 +32,21 @@ const ConsolidatedFormComponent = () => {
         <RadioButtons
           id="radioOption1"
           name="myRadioGroup"
-          label="Default radio 1"
+          label="Küçük"
           checked={selectedOption === "radioOption1"}
           onChange={handleRadioChange}
         />
         <RadioButtons
           id="radioOption2"
           name="myRadioGroup"
-          label="Default radio 2"
+          label="Büyük"
           checked={selectedOption === "radioOption2"}
           onChange={handleRadioChange}
         />
       </div>
       <div>
-      <Dropdown buttonLabel="Dropdown button" DoughType={DoughType} />
-    </div>
+        <Dropdown buttonLabel="Dropdown button" menuItems={menuItems} />
+      </div>
     </>
   );
 };
