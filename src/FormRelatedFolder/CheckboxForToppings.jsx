@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Checkbox from './Checkbox'; // Assuming Checkbox.js is in the same directory
 
-const ToppingsCheckboxGroup = () => {
+const ToppingsCheckboxGroup = ({ onChange }) => {
   const [toppingsState, setToppingsState] = useState({});
   const toppings = [
     { id: "pepperoni", label: "Pepperoni" },
@@ -25,6 +25,9 @@ const ToppingsCheckboxGroup = () => {
       ...prevState,
       [toppingId]: isChecked,
     }));
+    
+    onChange(isChecked);
+
 
     console.log(
       `Topping ${toppingId} is ${isChecked ? "checked" : "unchecked"}`

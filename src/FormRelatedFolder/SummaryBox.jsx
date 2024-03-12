@@ -48,7 +48,7 @@ const OrderSummary = ({ selectedPizza, additionalIngredients }) => {
       <h2>Sipariş Toplamı</h2>
       {/* OrderCount bileşenini burada kullanarak count bilgisini alın */}
       <OrderCount onCountChange={handleOrderCountChange} />
-      <p>Seçimler Toplamı: {selectionTotal} TL</p>
+      {/* <p>Seçimler Toplamı: {selectionTotal} TL</p> */}
       <p>Pizza Fiyatı: {calculatePizzaPrice(selectedPizza)} TL</p>
       <p>Toplam Tutar: {orderTotal} TL</p>
 
