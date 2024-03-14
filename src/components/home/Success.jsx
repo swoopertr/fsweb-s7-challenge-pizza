@@ -3,11 +3,10 @@ import './success.css'
 
 const Success = () => {
     return (
-        <div className="success-container" >
+        <div className="success-container">
             <h2 className="success-title">Teknolojik Yemekler</h2>
-            <div className="successtext">
-                <h1 className="success-subtitle">TEBRİKLER!<br />SİPARİŞİNİZ ALINDI!</h1>
-            </div>
+            <h1 className="success-subtitle">TEBRİKLER!<br />SİPARİŞİNİZ ALINDI!</h1>
+
         </div>
     );
 };

@@ -1,21 +1,34 @@
 body {
-    background-color: #CE2829 !important;
+    background-color: #CE2829;
 }
-
 
 .success-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 100px;
+    gap: 200px;
     color: white;
+
 }
 
-.success-title{
-    justify-content: flex-start;
-    font-weight:bolder;
+.success-title {
+    font-family: "Quattrocento", serif;
+    font-size: 3.2em;
+    line-height: 1.1;
+    
+    text-decoration: underline;
+    padding-top: 190px;
+    margin-top: -350px;
+
 }
 
-.success-subtitle{
-    font-weight:lighter;
+
+.success-subtitle {
+    font-family: "Quattrocento", serif;
+    font-size: 3.2em;
+    line-height: 1.1;
+    font-weight: 100;
+
+
+
 }
