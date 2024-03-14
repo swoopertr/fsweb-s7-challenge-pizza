@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PizzaOrderForm from "./components/Pizzaorder";
+import Success from "./components/home/Success";
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
           <Route exact path="/pizzaorder">
             <PizzaOrderForm />
             {/* buraya pizza sipariş formu gelecek. */}
+          </Route>
+          <Route exact path="/success">
+          <Success/>
           </Route>
         </Switch>
       </Router>

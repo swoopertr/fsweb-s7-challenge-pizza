@@ -350,3 +350,8 @@ IT1'i bitirdikten sonra çalışmanı daha da ileri götürebilirsin. Buradaki h
 
   - **3 Gereksinimleri Aşıyor:**
     - Doğru yanıta ek, en az bir başka çözüm ile de daha geniş perspektiftan yanıtlayabilme, ikisi arasındaki benzerlik ve uygulama farklarını karşılaştırabilmek.
+
+
+
+
+-homepage'in css'i ve genel hatalarına bakılacak.

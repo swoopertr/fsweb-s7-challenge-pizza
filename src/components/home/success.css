@@ -1,0 +1,21 @@
+body {
+    background-color: #CE2829 !important;
+}
+
+
+.success-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 100px;
+    color: white;
+}
+
+.success-title{
+    justify-content: flex-start;
+    font-weight:bolder;
+}
+
+.success-subtitle{
+    font-weight:lighter;
+}
