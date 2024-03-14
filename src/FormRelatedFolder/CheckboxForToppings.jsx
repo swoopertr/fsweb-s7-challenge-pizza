@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import Checkbox from './Checkbox'; // Assuming Checkbox.js is in the same directory
+import React, { useState } from "react";
+import Checkbox from "./Checkbox"; // Assuming Checkbox.js is in the same directory
 
 const ToppingsCheckboxGroup = ({ onChange }) => {
   const [toppingsState, setToppingsState] = useState({});
@@ -25,9 +25,8 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
       ...prevState,
       [toppingId]: isChecked,
     }));
-    
-    onChange(isChecked);
 
+    onChange(isChecked);
 
     console.log(
       `Topping ${toppingId} is ${isChecked ? "checked" : "unchecked"}`
@@ -36,16 +35,19 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
 
   return (
     <div>
-      <h2>Pizza Toppings</h2>
-      {toppings.map((topping) => (
-        <Checkbox
-          key={topping.id}
-          id={topping.id}
-          label={topping.label}
-          checked={toppingsState[topping.id] || false} 
-          onChange={(e) => handleChange(topping.id, e.target.checked)}
-        />
-      ))}
+      <h1>Ek Malzemeler</h1>
+      <h2>En fazla 10 malzeme seçebilirsiniz</h2>
+      <div className="malzemecontainer">
+        {toppings.map((topping) => (
+          <Checkbox
+            key={topping.id}
+            id={topping.id}
+            label={topping.label}
+            checked={toppingsState[topping.id] || false}
+            onChange={(e) => handleChange(topping.id, e.target.checked)}
+          />
+        ))}
+      </div>
     </div>
   );
 };
