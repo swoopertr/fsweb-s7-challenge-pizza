@@ -1,0 +1,20 @@
+.big-part-container{
+    background-image: url(./../../assets/cta/kart-1.png);
+    background-position: center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 300px;
+}
+
+.big-part-items{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+    font-family:'Quattrocento';
+    font-size: 35px;
+}
+
+.big-part-text{
+    font-family: "Roboto Condensed";
+}

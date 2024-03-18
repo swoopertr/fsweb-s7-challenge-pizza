@@ -1,11 +1,10 @@
 import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import workintech from "/workintech.svg";
-import "./App.css";
 import Home from "./components/home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PizzaOrderForm from "./components/Pizzaorder";
-import Success from "./components/home/Success";
+import Success from "./components/success/Success";
 
 function App() {
   return (

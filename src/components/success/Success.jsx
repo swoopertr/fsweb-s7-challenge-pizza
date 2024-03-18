@@ -6,7 +6,6 @@ const Success = () => {
         <div className="success-container">
             <h2 className="success-title">Teknolojik Yemekler</h2>
             <h1 className="success-subtitle">TEBRİKLER!<br />SİPARİŞİNİZ ALINDI!</h1>
-
         </div>
     );
 };
