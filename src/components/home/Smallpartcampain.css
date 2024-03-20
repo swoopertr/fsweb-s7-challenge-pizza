@@ -1,0 +1,28 @@
+.smallcampain-button {
+  background-color: rgb(249, 250, 251);
+  color: red;
+  border-radius: 30px;
+  padding: 10px;
+  border: none;
+  margin: 10px 100px;
+  font-size: x-small;
+}
+
+.smallcampain-text {
+  font: larger;
+}
+
+.small-part-items {
+  width: max-content;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.small-part-container {
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  font-family: "Roboto Condensed";
+  font-size: x-large;
+}
