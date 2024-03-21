@@ -1,26 +1,21 @@
-.campains-container {
-  display: flex;
-}
 
 .big-part-container {
   background-image: url(./../../assets/cta/kart-1.png);
   background-position: center;
-  background-size: cover;
   background-repeat: no-repeat;
-  height: 300px;
-  width: 300px;
-  margin-top: 100px;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
+  background-size: cover; 
+  height: 320px;
+  width: 420px;
+  border-radius: 10px;
 }
 
 .big-part-items {
   display: flex;
   flex-direction: column;
-  margin-bottom: 50px;
-  font-family: "Quattrocento";
-  font-size: 35px;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 15px;
 }
 
 .big-part-text {
@@ -35,14 +30,18 @@
   background-color: rgb(249, 250, 251);
   color: red;
   border-radius: 30px;
-  padding: 10px;
   border: none;
-  margin: 10px 100px;
   font-size: x-small;
+  width: 100px;
+  padding: 10px;
 }
 
 .bigcampain-text {
   font-family: "Quattrocento";
   color: white;
   font-size: revert;
+}
+
+#hackatlon-title {
+  color: #FAF7F2
 }
