@@ -1,11 +1,11 @@
 .smallcampain-button {
   background-color: rgb(249, 250, 251);
-  color: #CE2829;
+  color: red;
   border-radius: 30px;
-  padding: 10px;
   border: none;
-  margin: 10px 100px;
   font-size: x-small;
+  width: 100px;
+  padding: 10px;
 }
 
 .smallcampain-text {
@@ -14,12 +14,15 @@
 
 .small-part-items {
   height: 150px;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
 .small-part-container {
   display: flex;
-  justify-content: space-around;
   flex-direction: column;
   gap: 20px;
   font-family: "Roboto Condensed";
