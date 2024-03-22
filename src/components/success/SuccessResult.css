@@ -6,13 +6,18 @@
   padding: 10px;
   margin:auto;
   margin-bottom: auto;
-  border-radius: 5px; /* Köşeleri yuvarlamak için */
-  
+  border-radius: 5px; /* Köşeleri yuvarlamak için */ 
 }
 .SuccessResultSecondMain {
   margin-right: 40px;
   margin-top: 20px;
   margin-left: 40px;
+}
+
+.SuccessResultChild{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .SuccessResultH2 {
@@ -30,4 +35,10 @@
   margin-bottom: 5px; /* Alt boşluk */
   font-weight: bold;
   
+}
+
+.success-row-class{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }

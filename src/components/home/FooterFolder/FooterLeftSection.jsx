@@ -1,13 +1,13 @@
 import Icon1 from '../../../assets/footer/icons/icon-1.png'
 import Icon2 from '../../../assets/footer/icons/icon-2.png'
 import Icon3 from '../../../assets/footer/icons/icon-3.png'
+import Logo from '../../../assets/footer/logo-footer.svg'
 
 const FooterLeftSection = () => {
   return (
     <div className="left-section">
       <h6>
-        Teknolojik <br />
-        Yemekler
+        <img src={Logo} />
       </h6>
       <address className="left-section-items">
         <img src={Icon1} />

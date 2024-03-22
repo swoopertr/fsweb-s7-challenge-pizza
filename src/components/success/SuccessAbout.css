@@ -17,7 +17,7 @@
 }
 .SuccessAboutH2 {
     font-size: 24px;
-    color: white;
+    color: #FAF7F2;
     margin-bottom: 10px; /* Alt boşluk */
   }
   
@@ -25,5 +25,9 @@
     font-size: 10px;
     color: #5F5F5F;
     margin-bottom: 5px; /* Alt boşluk */
-    font-family: "Roboto Condensed";
+    
+  }
+
+  .SuccessAboutSpan{
+    color: #FAF7F2;
   }
