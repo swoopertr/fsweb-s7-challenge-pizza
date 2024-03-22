@@ -12,19 +12,15 @@ const MiddleCategoryMenu = (props) => {
         event.preventDefault();
         props.clickFunction(event);
     };
-
     const svgIcons = [Svg1, Svg2, Svg3, Svg4, Svg5, Svg6];
-
     return (
         <>
-            <ul className="category-containerbottom">
+            <ul className="ulContainer">
                 {props.items.map((item, index) => (
-                    <li key={item}>
-                        <div className="category-items">
+                    <li key={item} className="category-containerbottom">
+                        <div className="category-items" onClick={onClick} data-id={item}>
                             <img src={svgIcons[index]} alt={`icon-${index + 1}`} />
-                            <a href="#" onClick={onClick} data-id={item}>
-                                {item}
-                            </a>
+                            <span className="category-containerbottomText">{item}</span>
                         </div>
                     </li>
                 ))}
@@ -32,4 +28,5 @@ const MiddleCategoryMenu = (props) => {
         </>
     );
 };
+
 export default MiddleCategoryMenu;

@@ -11,16 +11,40 @@ const MiddleCategory = () => {
         console.log('data_id: ', data_id);
         if (data_id === "Ramen") {
             setSelectedCat([
-                { imgUrl: "https://picsum.photos/200/200", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
-                { imgUrl: "https://picsum.photos/200/200", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
-                { imgUrl: "https://picsum.photos/200/200", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
             ])
 
         } else if (data_id === "Pizza") {
             setSelectedCat([
-                { imgUrl: "https://picsum.photos/200/200", Rating: "4.1", ReviewCount: "120", Price: "85 TRY", Title: "Terminal Pizza" },
-                { imgUrl: "https://picsum.photos/200/200", Rating: "4.2", ReviewCount: "200", Price: "95 TRY", Title: "Ter Pizza" },
-                { imgUrl: "https://picsum.photos/200/200", Rating: "4.3", ReviewCount: "300", Price: "105 TRY", Title: "minal Pizza" }
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
+            ])
+        } else if (data_id === "Burger") {
+            setSelectedCat([
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
+            ])
+        } else if (data_id === "French Fries") {
+            setSelectedCat([
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
+            ])
+        } else if (data_id === "Soft Drinks") {
+            setSelectedCat([
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
+            ])
+        }else if (data_id === "Pizza") {
+            setSelectedCat([
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-1.png", Rating: "4.9", ReviewCount: "420", Price: "85 TRY", Title: "Ramen de Soza" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-2.png", Rating: "4.2", ReviewCount: "301", Price: "95 TRY", Title: "Kültürlü Ramen" },
+                { imgUrl: "../../Assets/mile2-aseets/pictures/food-3.png", Rating: "3.3", ReviewCount: "230", Price: "105 TRY", Title: "Mantarlı Ramen" }
             ])
         }
     };
