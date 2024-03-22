@@ -1,0 +1,53 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.MiddleCategory {
+    display: flex;
+    justify-content: center;
+}
+
+.small-red-title {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #CE2829;
+    font-size: x-large;
+  }
+
+  .big-normal-title {
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: "Barlow", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    margin-bottom: 20px;
+  }
+
+  .category-containerbottom{
+    display: flex;
+    flex-direction: row;
+    row-gap: 10px
+    ;
+  }
+  
+  .category-items img {
+    width: 40px; 
+    height: auto;
+}
+
+.category-containerbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20%;
+}
+
+.category-items {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}

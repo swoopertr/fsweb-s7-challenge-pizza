@@ -1,8 +1,8 @@
 const FooterMiddleSection = () => {
   return (
-    <div className="MiddleSection">
-      <h2>Sıccacık Menuler</h2>
-      <ul>
+    <div className="middle-section">
+      <h6>Sıccacık Menuler</h6>
+      <ul className="footer-menu-items">
         <li>
           <a href="#">Terminal Pizza</a>
         </li>

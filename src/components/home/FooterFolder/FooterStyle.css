@@ -1,37 +1,85 @@
 .footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
-  }
-  
-  .columns {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .tradeMark {
-    margin-top: 20px; /* Add margin as needed */
-  }
-  
-  .instagram-section {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between
-  }
-
-  .instagram-section img {
-    width: 100px;
-    height: auto;
-    padding-inline-start: 35px;
-  }
-
-.MiddleSection a {
-  color: aliceblue!important;
-  
-
+  background-color: black;
+  color: #5F5F5F;
+  padding: 20px;
+  font-family: "Roboto Condensed";
 }
 
-.Middle {
-    line-height: 45px;
+.footer h6 {
+  color: #FAF7F2;
+}
+.columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
 }
 
+.trademark {
+  margin-top: 20px; /* Add margin as needed */
+  display: flex;
+  border-top: solid 1px;
+  border-color: gray;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  align-items: center;
+}
+
+.trademark img {
+  width: 30px;
+  height: 30px;
+  color: aliceblue;
+}
+
+.instragram-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.instagram-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 180px;
+  height: 110px;
+  gap: 5px;
+}
+
+.instagram-section img {
+  width: 50px;
+  height: 50px;
+}
+
+.middle-section a {
+  color: #5F5F5F;
+}
+
+.middle-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer-menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-section{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-section-items{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.left-section h6{
+  font-size: x-large;
+  font-family: "Quattrocento";
+  
+}

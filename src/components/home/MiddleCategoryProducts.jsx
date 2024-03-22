@@ -4,7 +4,7 @@ import MiddleCategoryProductsItem from "./MiddleCategoryProductsItem";
 const MiddleCategoryProducts = (props) => {
     
     return (
-        <>
+        <div style={{display:"flex", flexDirection: "row"}}>
             {props.items.map(item=>{
                 return (
                     <>
@@ -18,7 +18,7 @@ const MiddleCategoryProducts = (props) => {
                     </>
                 )
             })}
-        </>
+        </ div>
     );
 };
 

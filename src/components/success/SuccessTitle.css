@@ -1,0 +1,30 @@
+.success-title{
+    color: #FAF7F2;
+    font-weight: bolder;
+    font-family:'Quattrocento';
+    font-size: 20px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.success-subtitle1{
+    font-family: "Satisfy";
+    color: #FDC913;
+    
+}
+.success-subtitle2{
+    font-family: "Roboto Condensed";
+    color: #FAF7F2;
+    font-size: 40px;
+}
+
+.success-title-container{
+text-align: center;
+margin-top: 30px;
+padding-top: 20px;
+display: flex;
+flex-direction: column;
+gap: 30px;
+
+}
+

@@ -1,4 +1,4 @@
-import React from "react";
+
 import FooterLeftSection from "./FooterLeftSection";
 import FooterMiddleSection from "./FooterMiddleSection";
 import FooterInstaSection from "./FooterInstaSection";
