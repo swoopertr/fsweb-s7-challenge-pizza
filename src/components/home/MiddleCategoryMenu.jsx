@@ -20,7 +20,7 @@ const MiddleCategoryMenu = (props) => {
             <ul className="category-containerbottom">
                 {props.items.map((item, index) => (
                     <li key={item}>
-                        <div className="category-items">
+                        <div className="container-category-items">
                             <img src={svgIcons[index]} alt={`icon-${index + 1}`} />
                             <a href="#" onClick={onClick} data-id={item}>
                                 {item}

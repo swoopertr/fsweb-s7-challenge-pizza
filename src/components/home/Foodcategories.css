@@ -12,7 +12,7 @@
 
 .category-items{
     display: flex;
-    gap: 20px;
+    gap: 5px;
     height: max-content;
     align-items: center;
 }

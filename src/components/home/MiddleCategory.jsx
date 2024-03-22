@@ -28,13 +28,13 @@ const MiddleCategory = () => {
     return (
         <>
             <div className="wrapper-menu-products">
-            <div className="MiddleCategoryMenu">
+            <div>
                 <MiddleCategoryMenu
                     clickFunction={onClickRmen}
                     items={['Ramen', 'Pizza', 'Burger', 'French frıes', 'Fast Food', 'Soft drınks']}
                 />
                 </div>
-                <div className="MiddleCategoryProducts">
+                <div>
                 <MiddleCategoryProducts items={selectedCat} />
             </div>
             </div>
