@@ -1,10 +1,12 @@
 import React from 'react';
 import './CustomerInfoText.css';
+import bg from '../assets/form-banner.png'
 
 const CustomerInfoText = ({productName,price,rating,comment,desc}) => {
   return (
     
      <div className="customer-info-container">
+      <img src={bg} alt=""/>
       <div className="main">
       Anasayfa - Seçenekler - <span style={{ color: 'red' }}>Sipariş Oluştur</span>
       </div>
