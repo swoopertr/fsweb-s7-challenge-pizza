@@ -9,12 +9,14 @@ import MiddleCategoryContainer from "./MiddleCategoryContainer";
 
 const Home = () => {
   return (
-    <>
+    <> <div style={{backgroundColor: "#FAF7F2"}}> 
+    {/* Divler arasında beyaz boşluklar oluyordu o yüzden bu div ekledim */}
       <TopSection />
       <FoodCategories />
       <Campaigns />
       <MiddleCategoryContainer />
       <Footer />
+      </div>
     </>
   );
 };

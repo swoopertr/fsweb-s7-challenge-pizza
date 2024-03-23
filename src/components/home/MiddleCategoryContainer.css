@@ -5,6 +5,10 @@
     background-color: #FAF7F2;
 }
 
+/* .MiddleCategory {
+    display: flex;
+    justify-content: center;
+} */
 
 .small-red-title {
     font-family: "Satisfy", cursive;
@@ -31,56 +35,76 @@
     margin-bottom: 20px;
   }
   
-  .category-items img {
-    width: 40px; 
-    height: auto;
+  .category-containerbottom {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    padding: 7px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s;
+    border-radius: 60px;
+    background-color: #fff;
+  }
 
+  .category-containerbottom:hover {
+    background-color: #292929; /* Change background color on hover */
 }
-.container-category-items img {
-  width: 40px; 
-  height: auto;
+
+.category-items span {
+  font-size: 16px; /* Adjust text size */
 }
-.category-items {
+
+.category-containerbottom {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    text-align: center;
-}
-.container-category-items {
-  display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    padding: 10px 30px;
-    border-radius: 40px;
-    max-width: 600px;
-    margin: auto;
-    background-color: white;
+    justify-content: space-around;
+    gap: 20%;
+    
+  }
+
+
+  .ulContainer {
+    display: flex;
+    justify-content: space-between;
 }
 
-.productDetails{
+.category-containerbottomText{
+  font-family: Quattrocento;
+}
+
+.middleCategoryProducts {
   display: flex;
+}
+
+.foodItemsFrame {
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #fff; 
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.productDetails {
+  display: flex;
+  align-items: center;
   flex-direction: column;
-  padding: 40px;
-  background-color: white;
-  font-size: 30px;
-  text-align: center;
 }
 
-.productRating{
-  display: flex;
-  gap: 20px;
-  font-size: 20px;
-  margin-top: 5px;
-  justify-content: center;
+.productDetails img {
+  width: 200px; /* Adjust width of the image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Add margin between image and details */
 }
 
-.productDetails img{
-  border-radius: 120px;
-  margin-bottom: 5px;
+.productName {
+  font-weight: bold; /* Make product name bold */
+  margin-bottom: 5px; /* Add margin below product name */
 }
 
-.container-category-items :hover {
-  background-color: black;
-  color: white;
+.productRating p {
+  margin: 0; /* Remove default margin for paragraphs */
+}
+
+.productRating strong {
+  margin-right: 5px; /* Add margin between label and value */
 }
