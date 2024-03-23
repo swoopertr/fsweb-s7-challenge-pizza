@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import OrderCount from "./OrderCount";
-import "./OrderSummary.css"
+import "./OrderSummary.css";
 
 const OrderSummary = ({ selectedPizza, additionalIngredients }) => {
   const [selectionTotal, setSelectionTotal] = useState(0);
@@ -46,19 +46,32 @@ const OrderSummary = ({ selectedPizza, additionalIngredients }) => {
 
   return (
     <div className=" order-summary-total">
-       {/* OrderCount bileşenini burada kullanarak count bilgisini alın */}
-       <OrderCount onCountChange={handleOrderCountChange} />
-    <div className="order-summary-container">
-       <div className="order-count-container"> 
-      {/* <p>Seçimler Toplamı: {selectionTotal} TL</p> */}
-      <h2>Sipariş Toplamı</h2>
-      <p>Pizza Fiyatı: {calculatePizzaPrice(selectedPizza)} TL</p>
-      <p className="red-total">Toplam Tutar: {orderTotal} TL</p>
-      
+      {/* OrderCount bileşenini burada kullanarak count bilgisini alın */}
 
-      <button onClick={handleOrderSubmit} className="yellow-button">Sipariş Ver</button>
-    </div>
-    </div>
+      <OrderCount
+        className="order-summary-count"
+        onCountChange={handleOrderCountChange}
+      />
+      <div className="order-summary-container">
+        <div className="order-sum-container">
+          {/* <p>Seçimler Toplamı: {selectionTotal} TL</p> */}
+          <h2>Sipariş Toplamı</h2>
+          <p className="selection-label">
+            Seçimler{" "}
+            <span className="price">
+              {calculatePizzaPrice(selectedPizza)} TL
+            </span>
+          </p>
+
+          <p className="red-total">
+            Toplam <span className="price">{orderTotal} TL </span>
+          </p>
+
+          <button onClick={handleOrderSubmit} className="yellow-button">
+            SİPARİŞ VER
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

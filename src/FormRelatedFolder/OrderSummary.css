@@ -1,38 +1,57 @@
-
-.order-summary-total{
-    display: flex;
-    background-color: #FAF7F2;
+.order-summary-total {
+  display: flex;
+  justify-content: center; /* Bileşenleri yatay olarak sayfanın ortasına hizalar */
+  align-items:baseline; /* Bileşenleri dikey olarak sayfanın üst kısmına hizalar */
 }
-.order-summary-container {
-    display: flex;
-    justify-content: flex-end; /* Bileşeni sağa dayalı yapar */
-    align-items: center;
-   
-  }
-  
-  .order-summary-content {
-    margin-right: 20px; /* Sağ kenara boşluk bırakır */
-  }
-  
-  .order-summary-content h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .order-summary-content p {
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .yellow-button {
-    background-color: yellow;
-    color: black; /* Yazı rengini siyah yapmak için */
-  }
-  
-  .yellow-button:hover {
-    background-color: #ff0; /* Hover durumunda arka plan rengini değiştirme */
-  }
-  .red-total{
-    color: red;
-  }
-  
+
+.red-total {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sum-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  width: 300px;
+  margin-left: 20px; /* Sol tarafta boşluk bırakmak için */
+  background-color: #FAF7F2;
+  position: relative; /* Konumlandırma için */
+  text-align:start;
+
+}
+
+.order-sum-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.order-sum-container button {
+  background-color: #FDC913;
+  border: none;
+  padding: 10px 70px;
+  font-size: 16px;
+  cursor: pointer;
+  color: black; /* Bu satırı ekledim, hover durumunda yazı rengini siyah yapmak için */
+  position: absolute; /* Konumlandırma için */
+  left: 0; /* Butonun sol kenara hizalanması */
+  width: 100%; /* Butonun container ile aynı genişlikte olması */
+
+}
+
+.order-sum-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.selection-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection-label .price {
+  margin-left: auto;
+}
+
+

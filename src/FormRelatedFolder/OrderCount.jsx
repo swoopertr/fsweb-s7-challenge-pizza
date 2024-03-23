@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./OrderCount.css"
+import "./OrderCount.css";
 
 const OrderCount = ({ initialCount = 0, onCountChange }) => {
   const [count, setCount] = useState(initialCount);
@@ -20,7 +20,6 @@ const OrderCount = ({ initialCount = 0, onCountChange }) => {
 
   return (
     <div className="order-count-container">
-      <h2>Sipariş Ver</h2>
       <button onClick={handleDecrement}>-</button>
       <span>{count}</span>
       <button onClick={handleIncrement}>+</button>
