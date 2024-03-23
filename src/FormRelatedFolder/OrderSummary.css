@@ -1,0 +1,38 @@
+
+.order-summary-total{
+    display: flex;
+    background-color: #FAF7F2;
+}
+.order-summary-container {
+    display: flex;
+    justify-content: flex-end; /* Bileşeni sağa dayalı yapar */
+    align-items: center;
+   
+  }
+  
+  .order-summary-content {
+    margin-right: 20px; /* Sağ kenara boşluk bırakır */
+  }
+  
+  .order-summary-content h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .order-summary-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .yellow-button {
+    background-color: yellow;
+    color: black; /* Yazı rengini siyah yapmak için */
+  }
+  
+  .yellow-button:hover {
+    background-color: #ff0; /* Hover durumunda arka plan rengini değiştirme */
+  }
+  .red-total{
+    color: red;
+  }
+  

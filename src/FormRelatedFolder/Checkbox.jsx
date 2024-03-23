@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./CheckBox.css"
 const Checkbox = ({ id, label, checked, onChange }) => {
   return (
     <div className="form-check">
@@ -9,6 +9,7 @@ const Checkbox = ({ id, label, checked, onChange }) => {
         id={id}
         checked={checked}
         onChange={onChange}
+        style={{backgroundColor: "#FDC913", width: "30px", height:"30px"}}
       />
       <label className="form-check-label" htmlFor={id}>
         {label}

@@ -25,8 +25,7 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
       ...prevState,
       [toppingId]: isChecked,
     }));
-
-    onChange(isChecked);
+    onChange(toppingId, isChecked);
 
     console.log(
       `Topping ${toppingId} is ${isChecked ? "checked" : "unchecked"}`

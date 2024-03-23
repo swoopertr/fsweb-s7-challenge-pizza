@@ -2,12 +2,13 @@ import React, { useState } from "react";
 import Checkbox from "./Checkbox";
 import RadioButtons from "./RadioButtons";
 import DropDownForDoughType from "./DropDownForDoughType";
-import OrderSummary from "./SummaryBox";
+import OrderSummary from "./OrderSummary";
 import OrderCount from "./OrderCount";
 import ToppingsCheckboxGroup from "./CheckboxForToppings";
 import "./Form.css";
 import OrderNote from "./OrderNote";
 import CustomerInfoText from "./CustomerInfoText";
+import PizzaInfo from "./PizzaInfo"
 const ConsolidatedFormComponent = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [orderCount, setOrderCount] = useState(0); // Eklendi
@@ -43,31 +44,7 @@ const ConsolidatedFormComponent = () => {
         <CustomerInfoText />
       </div>
       <div className="size-container">
-        <div>
-          <h2>Boyut Seç</h2>
-          <RadioButtons
-            id="radioOption1"
-            name="myRadioGroup"
-            label="Küçük"
-            checked={selectedOption === "radioOption1"}
-            onChange={handleRadioChange}
-          />
-          <RadioButtons
-            id="radioOption2"
-            name="myRadioGroup"
-            label="Orta"
-            checked={selectedOption === "radioOption2"}
-            onChange={handleRadioChange}
-          />
-          <RadioButtons
-            id="radioOption3"
-            name="myRadioGroup"
-            label="Büyük"
-            checked={selectedOption === "radioOption3"}
-            onChange={handleRadioChange}
-          />
-        </div>
-
+  
         <DropDownForDoughType />
       </div>
       <div>

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import OrderCount from "./OrderCount";
+import "./OrderSummary.css"
 
 const OrderSummary = ({ selectedPizza, additionalIngredients }) => {
   const [selectionTotal, setSelectionTotal] = useState(0);
@@ -44,15 +45,20 @@ const OrderSummary = ({ selectedPizza, additionalIngredients }) => {
   };
 
   return (
-    <div>
-      <h2>Sipariş Toplamı</h2>
-      {/* OrderCount bileşenini burada kullanarak count bilgisini alın */}
-      <OrderCount onCountChange={handleOrderCountChange} />
+    <div className=" order-summary-total">
+       {/* OrderCount bileşenini burada kullanarak count bilgisini alın */}
+       <OrderCount onCountChange={handleOrderCountChange} />
+    <div className="order-summary-container">
+       <div className="order-count-container"> 
       {/* <p>Seçimler Toplamı: {selectionTotal} TL</p> */}
+      <h2>Sipariş Toplamı</h2>
       <p>Pizza Fiyatı: {calculatePizzaPrice(selectedPizza)} TL</p>
-      <p>Toplam Tutar: {orderTotal} TL</p>
+      <p className="red-total">Toplam Tutar: {orderTotal} TL</p>
+      
 
-      <button onClick={handleOrderSubmit}>Sipariş Ver</button>
+      <button onClick={handleOrderSubmit} className="yellow-button">Sipariş Ver</button>
+    </div>
+    </div>
     </div>
   );
 };
