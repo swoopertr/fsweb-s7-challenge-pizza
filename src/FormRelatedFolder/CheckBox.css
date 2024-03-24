@@ -1,0 +1,30 @@
+.form-check-input {
+    display: none; /* Hide the default checkbox */
+  }
+  
+  .custom-checkbox {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #FAF7F2; /* Default background color of the custom checkbox */
+    border-radius: 3px;
+    margin-right: 5px;
+  }
+  
+  /* Adjust appearance of custom checkbox when checked */
+  .form-check.checked .custom-checkbox {
+    background-color: #FDC913; /* Change background color when checked */
+  }
+  
+  /* Adjust appearance of checkmark when checkbox is checked */
+  .form-check-input:checked + .form-check-label .custom-checkbox::after {
+    content: "✔"; /* Display a checkmark when checkbox is checked */
+    display: block;
+    margin: 2px 0 0 2px; */
+  }
+  
+  .form-check-label {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 10px;
+  }

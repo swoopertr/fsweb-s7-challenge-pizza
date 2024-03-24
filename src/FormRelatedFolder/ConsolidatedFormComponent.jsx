@@ -9,11 +9,12 @@ import "./Form.css";
 import OrderNote from "./OrderNote";
 import CustomerInfoText from "./CustomerInfoText";
 import PizzaInfo from "./PizzaInfo"
+
 const ConsolidatedFormComponent = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [orderCount, setOrderCount] = useState(0); // Eklendi
   const [selectionTotal, setSelectionTotal] = useState(0);
-  const [toppingsState, setToppingsState] = useState({});
+  const [selectedToppings, setSelectedToppings] = useState([]);
 
   const handleRadioChange = (event) => {
     setSelectedOption(event.target.id);
@@ -23,19 +24,9 @@ const ConsolidatedFormComponent = () => {
     setOrderCount(count); // OrderCount bileşeninden gelen sayı değişikliğini yakala
   };
 
-  const handleToppingsChange = (toppingId, isChecked) => {
-    setToppingsState((prevState) => ({
-      ...prevState,
-      [toppingId]: isChecked,
-    }));
-
-    setSelectionTotal((prevTotal) => {
-      return isChecked ? prevTotal + 5 : prevTotal - 5;
-    });
-
-    console.log(
-      `Topping ${toppingId} is ${isChecked ? "checked" : "unchecked"}`
-    );
+  const handleToppingsChange = (selectedToppings) => {
+    setSelectedToppings(selectedToppings);
+    setSelectionTotal(selectedToppings.length * 5);
   };
 
   return (

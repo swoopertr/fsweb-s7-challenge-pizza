@@ -21,21 +21,20 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
   ];
 
   const handleChange = (toppingId, isChecked) => {
-    setToppingsState((prevState) => ({
-      ...prevState,
-      [toppingId]: isChecked,
-    }));
-    onChange(toppingId, isChecked);
+    const updatedToppingsState = { ...toppingsState, [toppingId]: isChecked };
+    setToppingsState(updatedToppingsState);
 
-    console.log(
-      `Topping ${toppingId} is ${isChecked ? "checked" : "unchecked"}`
+    const selectedToppings = Object.keys(updatedToppingsState).filter(
+      (key) => updatedToppingsState[key]
     );
+
+    onChange(selectedToppings);
   };
 
   return (
     <div>
       <h1>Ek Malzemeler</h1>
-      <h2>En fazla 10 malzeme seçebilirsiniz</h2>
+      <h2>En fazla 10 malzeme seçebilirsiniz. 5₺ </h2>
       <div className="malzemecontainer">
         {toppings.map((topping) => (
           <Checkbox
