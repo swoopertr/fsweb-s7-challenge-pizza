@@ -25,6 +25,9 @@ const ConsolidatedFormComponent = () => {
   };
 
   const handleToppingsChange = (selectedToppings) => {
+    if (selectedToppings.length > 10) {
+      console.log("Hata")
+    }
     setSelectedToppings(selectedToppings);
     setSelectionTotal(selectedToppings.length * 5);
   };

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Checkbox from "./Checkbox"; // Assuming Checkbox.js is in the same directory
+import { Alert } from "bootstrap";
 
 const ToppingsCheckboxGroup = ({ onChange }) => {
   const [toppingsState, setToppingsState] = useState({});
@@ -27,6 +28,10 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
     const selectedToppings = Object.keys(updatedToppingsState).filter(
       (key) => updatedToppingsState[key]
     );
+
+if (selectedToppings.length >= 10) {
+throw new Alert("Üzerine Tarçın da üfeleyelim mi küçük ayı? ")
+}
 
     onChange(selectedToppings);
   };
