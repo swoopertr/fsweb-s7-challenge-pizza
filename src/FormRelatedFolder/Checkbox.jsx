@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./CheckBox.css"
-
 const Checkbox = ({ id, label, checked, onChange }) => {
   const [isChecked, setIsChecked] = useState(checked);
 

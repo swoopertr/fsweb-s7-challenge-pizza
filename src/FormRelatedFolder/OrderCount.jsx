@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import "./OrderCount.css";
 
-const OrderCount = ({ initialCount = 0, onCountChange }) => {
-  const [count, setCount] = useState(initialCount);
+const OrderCount = ({initialCount, onCountChange }) => {
 
   const handleIncrement = () => {
-    const newCount = count + 1;
-    setCount(newCount);
+    const newCount = initialCount + 1;
     onCountChange(newCount);
   };
 
   const handleDecrement = () => {
-    if (count > 0) {
-      const newCount = count - 1;
-      setCount(newCount);
+    if (initialCount > 0) {
+      const newCount = initialCount - 1;
+      
       onCountChange(newCount);
     }
   };
@@ -21,7 +19,7 @@ const OrderCount = ({ initialCount = 0, onCountChange }) => {
   return (
     <div className="order-count-container">
       <button onClick={handleDecrement}>-</button>
-      <span>{count}</span>
+      <span>{initialCount}</span>
       <button onClick={handleIncrement}>+</button>
     </div>
   );

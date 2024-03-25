@@ -1,43 +1,26 @@
+// Dropdown.jsx
 import React, { useState } from "react";
+import "./Dropdown.css";
 
-const Dropdown = ({ buttonLabel, menuItems }) => {
-  const [isOpen, setIsOpen] = useState(false);
+const Dropdown = ({ buttonLabel, menuItems, onChange }) => {
+  const [selected, setSelected] = useState(""); // State to track selected value
 
-  const toggleDropdown = () => {
-    setIsOpen(!isOpen);
+  const onSelectChange = (event) => {
+    setSelected(event.target.value);
+    onChange(event);
   };
 
   return (
     <>
       <div className="hamur-container">
-        <label for="hamur">Hamur Seç</label>
-        <select name="hamur" id="hamur">
+        <select onChange={onSelectChange} value={selected} className="dropdown-select">
+          <option value="" disabled selected hidden>--Hamur Kalınlığını Seç--</option> 
           {menuItems.map((item, index) => (
-            <option value={item.label}>{item.label}</option>
+            <option className="dropdownOption" value={item.value} key={index}>{item.label}</option>
           ))}
         </select>
       </div>
     </>
-
-    // <div className="dropdown">
-    //   <button
-    //     className="btn btn-secondary dropdown-toggle"
-    //     type="button"
-    //     onClick={toggleDropdown}
-    //     aria-expanded={isOpen ? 'true' : 'false'}
-    //   >
-    //     {buttonLabel}
-    //   </button>
-    //   <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
-    //     {menuItems.map((item, index) => (
-    //       <li key={index}>
-    //         <a className="dropdown-item" href={item.href}>
-    //           {item.label}
-    //         </a>
-    //       </li>
-    //     ))}
-    //   </ul>
-    // </div>
   );
 };
 

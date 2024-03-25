@@ -1,10 +1,11 @@
 import React from 'react';
 
-const RadioButtons = ({ id, name, label, checked, onChange,value }) => {
+const RadioButtons = ({ id, name, label, checked, onChange, value }) => {
+
   return (
     <div className="form-check">
       <input
-        className="form-check-input"
+        className="RadioButton-Input"
         type="radio"
         id={id}
         name={name}
@@ -12,7 +13,7 @@ const RadioButtons = ({ id, name, label, checked, onChange,value }) => {
         onChange={onChange}
         data-value={value}
       />
-      <label className="form-check-label" htmlFor={id}>
+      <label className="RadioButtonLabel" htmlFor={id}>
         {label}
       </label>
     </div>
