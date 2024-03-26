@@ -1,0 +1,47 @@
+
+.big-part-container {
+  background-image: url(./../../assets/cta/kart-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 360px;
+  width: 420px;
+  border-radius: 10px;
+}
+
+.big-part-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-left: 20px;
+  gap: 15px;
+}
+
+.big-part-text {
+  font-family: "Roboto Condensed";
+  font-size: smaller;
+  font: caption;
+  font-size: large;
+  color: white;
+}
+
+.bigcampain-button {
+  background-color: rgb(249, 250, 251);
+  color: red;
+  border-radius: 30px;
+  border: none;
+  font-size: x-small;
+  width: 100px;
+  padding: 10px;
+}
+
+.bigcampain-text {
+  font-family: "Quattrocento";
+  color: white;
+  font-size: revert;
+}
+
+#hackatlon-title {
+  color: #FAF7F2
+}

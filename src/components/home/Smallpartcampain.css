@@ -1,0 +1,51 @@
+.smallcampain-button {
+  background-color: rgb(249, 250, 251);
+  color: red;
+  border-radius: 30px;
+  border: none;
+  font-size: x-small;
+  width: 100px;
+  padding: 10px;
+}
+
+.smallcampain-text {
+  font: larger;
+}
+
+.small-part-items {
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.small-part-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: "Roboto Condensed";
+  font-size: x-large;
+  width: 420px;
+}
+
+.item1 {
+  background-image: url(./../../assets/cta/kart-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.item2 {
+  background-image: url(./../../assets/cta/kart-3.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.red-color-text{
+  color: #CE2829;
+}
