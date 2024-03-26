@@ -1,0 +1,54 @@
+.customer-info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: Arial, sans-serif;
+    color: #333;
+    max-width: 500px;
+    margin: auto;
+    background-color: #F8F5F0;
+/* background-image: url('../assets/form-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; */
+  }
+  
+  .main {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  
+  .product-name {
+    margin: 0;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .product-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+  
+  .price h3 {
+    margin: 0;
+    color: #333;
+    font-size: 32px;
+    font-weight: bold;
+  }
+  
+  .rating h5 {
+    margin: 0 5px;
+    color: #333;
+    font-size: 16px;
+  }
+  .rating {
+    display: flex;
+  }
+  
+  .description {
+    margin-top: -20px;
+  }
+  

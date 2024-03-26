@@ -1,0 +1,35 @@
+.malzemecontainer {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.size-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hamur-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.ordernote-container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: stretch;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pizza-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

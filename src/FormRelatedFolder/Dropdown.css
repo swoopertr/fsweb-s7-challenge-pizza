@@ -1,0 +1,36 @@
+/* Dropdown.css */
+
+/* Dropdown container */
+.hamur-container {
+    position: relative; /* Ensure position relative for dropdown styling */
+  }
+  
+  /* Dropdown select */
+  .dropdown-select {
+    width: 250px; /* Adjust the width as needed */
+    height: 45px;
+    text-align: center;
+    background-color: #FAF7F2; /* Default background color */
+    border: 1px solid #ced4da; /* Add border for better visibility */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+  }
+  
+  .dropdown-select:focus {
+    outline: none; /* Remove default focus style */
+  }
+  
+  /* Dropdown options */
+  .dropdown-select option.textToDisappear {
+    display: none; /* Hide default option */
+  }
+  
+  .dropdown-select option.selected {
+    background-color: #FDC913; /* Change background color when selected */
+  }
+  
+  /* Dropdown when expanded */
+  .hamur-container .dropdown-select:active,
+  .hamur-container .dropdown-select:focus {
+    background-color: #FDC913; /* Change background color when expanded */
+  }
+  

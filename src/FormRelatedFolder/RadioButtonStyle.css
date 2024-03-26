@@ -1,0 +1,31 @@
+/* Styling for RadioButtons */
+
+.radio-buttons-wrapper {
+    display: flex;
+    flex-direction: row; /* Display as row */
+    align-items: center; /* Align items vertically in the center */
+  }
+
+.radio-buttons-wrapper .RadioButtonLabel {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Adjusted to make it a perfect circle */
+    text-align: center;
+    line-height: 50px; /* Centering the label vertically */
+    cursor: pointer;
+    background-color: #FAF7F2; /* Default background color */
+  }
+  
+  .radio-buttons-wrapper .RadioButton-Input:checked + .RadioButtonLabel {
+    background-color: #FDC913; /* Background color when checked */
+  }
+  
+  .radio-buttons-wrapper .RadioButton-Input + .RadioButtonLabel {
+    transition: background-color 0.3s; /* Smooth transition */
+  }
+  
+  .RadioButton-Input {
+    display: none;
+  }
+  

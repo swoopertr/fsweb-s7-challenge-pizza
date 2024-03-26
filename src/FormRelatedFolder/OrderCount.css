@@ -1,0 +1,21 @@
+.order-count-container {
+  display: flex;
+  align-items: flex-start; /* Bileşenleri dikey olarak üste hizalar */
+  border: 1px solid #ccc; /* Çerçeve ekler */
+  padding: 5px; /* İçeriği çerçeveden ayırır */
+  border-radius: 5px; /* Köşeleri yuvarlar */
+  background-color: #FAF7F2;
+}
+
+.order-count-container button {
+  margin: 0; /* Butonlardaki varsayılan kenar boşluğunu kaldırır */
+  font-size: 16px;
+  cursor: pointer;
+  border: none; /* Buton kenarlığını kaldırır */
+  background: none; /* Buton arkaplanını kaldırır */
+}
+
+.order-count-container span {
+  margin: 0 10px; /* Butonlar arasındaki boşluğu ayarlar */
+  font-size: 16px;
+}

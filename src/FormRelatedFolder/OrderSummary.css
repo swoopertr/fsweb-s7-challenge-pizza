@@ -1,0 +1,57 @@
+.order-summary-total {
+  display: flex;
+  justify-content: center; /* Bileşenleri yatay olarak sayfanın ortasına hizalar */
+  align-items:baseline; /* Bileşenleri dikey olarak sayfanın üst kısmına hizalar */
+}
+
+.red-total {
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-sum-container {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 30px;
+  width: 300px;
+  margin-left: 20px; /* Sol tarafta boşluk bırakmak için */
+  background-color: #FAF7F2;
+  position: relative; /* Konumlandırma için */
+  text-align:start;
+
+}
+
+.order-sum-container h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.order-sum-container button {
+  background-color: #FDC913;
+  border: none;
+  padding: 10px 70px;
+  font-size: 16px;
+  cursor: pointer;
+  color: black; /* Bu satırı ekledim, hover durumunda yazı rengini siyah yapmak için */
+  position: absolute; /* Konumlandırma için */
+  left: 0; /* Butonun sol kenara hizalanması */
+  width: 100%; /* Butonun container ile aynı genişlikte olması */
+
+}
+
+.order-sum-container button:hover {
+  background-color: #0056b3;
+}
+
+
+.selection-label {
+  display: flex;
+  justify-content: space-between;
+}
+
+.selection-label .price {
+  margin-left: auto;
+}
+
+
