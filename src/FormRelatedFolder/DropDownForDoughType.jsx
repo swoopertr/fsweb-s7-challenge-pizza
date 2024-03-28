@@ -16,7 +16,7 @@ const DoughTypeComponent = ({ onChange }) => {
 
   return (
     <div className="dough-type-container">
-      <p className="dough-type-label">Hamur Seç*</p>
+      <p className='size-font'>Hamur Seç<span className='red-mark'>*</span></p>
       <Dropdown buttonLabel="Dropdown button" menuItems={menuItems} onChange={onDropdownChange} />
     </div>
   );

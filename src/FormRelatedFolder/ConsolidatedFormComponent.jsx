@@ -9,23 +9,20 @@ import "./Form.css";
 import OrderNote from "./OrderNote";
 import CustomerInfoText from "./CustomerInfoText";
 import PizzaInfo from "./PizzaInfo";
-import SelectPizzaSizes from "./SelectPizzaSizes"
-import "./RadioButtonStyle.css"
+import SelectPizzaSizes from "./SelectPizzaSizes";
+import "./RadioButtonStyle.css";
 
 const ConsolidatedFormComponent = () => {
   const [selectedOption, setSelectedOption] = useState("");
   const [orderCount, setOrderCount] = useState(0); // Eklendi
-  const[pizzaSizes,setPizzaSizes]=useState("");//pizza boyutu
+  const [pizzaSizes, setPizzaSizes] = useState(""); //pizza boyutu
   const [selectionTotal, setSelectionTotal] = useState(0);
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [selectedDough, setSelectedDough] = useState("ince");
 
-
-
   const handleOrderCountChange = (count) => {
     setOrderCount(count); // OrderCount bileşeninden gelen sayı değişikliğini yakala
   };
- 
 
   const handleToppingsChange = (selectedToppings) => {
     if (selectedToppings.length > 10) {
@@ -35,36 +32,43 @@ const ConsolidatedFormComponent = () => {
     setSelectionTotal(selectedToppings.length * 5);
   };
 
-  const RadioButtonSelected = (selectedRadioButtonValue) =>{
+  const RadioButtonSelected = (selectedRadioButtonValue) => {
     console.log("selectedRadioButtonValue: ", selectedRadioButtonValue);
     setPizzaSizes(selectedRadioButtonValue);
-  }
+  };
 
-  const DoughTypeChange=(selectedDoughType)=>{
+  const DoughTypeChange = (selectedDoughType) => {
     console.log("selectedDoughType: ", selectedDoughType);
-    setSelectedDough(selectedDoughType)
-  }
+    setSelectedDough(selectedDoughType);
+  };
 
   return (
     <>
-      <div>
+      <div className="form-top-section">
         <CustomerInfoText />
       </div>
-      <div className="size-container">
-        <SelectPizzaSizes RadioButtonSelected={RadioButtonSelected}/>
-        <DropDownForDoughType onChange={DoughTypeChange}/>
-      </div>
-      <div>
-        <ToppingsCheckboxGroup onChange={handleToppingsChange} />
-      </div>
-      <div className="ordernote-container">
-        <OrderNote />
-      </div>
-      <div>
-        {/* onCountChange prop'u ekleniyor */}
-        
-        {/* OrderCount bileşenine orderCount prop'u ekleniyor */}
-        <OrderSummary selectedToppings = {selectedToppings} size={pizzaSizes} doughType={selectedDough} selectedPizza={""}/>
+      <div className="form-mid-section">
+        <div className="size-container">
+          <SelectPizzaSizes RadioButtonSelected={RadioButtonSelected} />
+          <DropDownForDoughType onChange={DoughTypeChange} />
+        </div>
+        <div>
+          <ToppingsCheckboxGroup onChange={handleToppingsChange} />
+        </div>
+        <div className="ordernote-container">
+          <OrderNote />
+        </div>
+        <div>
+          {/* onCountChange prop'u ekleniyor */}
+
+          {/* OrderCount bileşenine orderCount prop'u ekleniyor */}
+          <OrderSummary
+            selectedToppings={selectedToppings}
+            size={pizzaSizes}
+            doughType={selectedDough}
+            selectedPizza={""}
+          />
+        </div>
       </div>
     </>
   );

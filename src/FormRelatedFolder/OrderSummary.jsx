@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import OrderCount from "./OrderCount";
 import "./OrderSummary.css";
+import LocalStorageHelper from "../Util/LocalStorageHelper";
 
 const OrderSummary = (props) => {
   const {selectedToppings, size, doughType, selectedPizza} = props
@@ -65,7 +66,19 @@ const OrderSummary = (props) => {
   };
 
   const handleOrderSubmit = () => {
+
+    const orderDetails = {
+      selectedToppings,
+      size,
+      doughType,
+      selectedPizza,
+      orderTotal: orderTotal,
+      count: count,
+      selectionsTotalValue,
+    }
+    console.log('orderDetails: ', orderDetails);
     // Siparişi tamamlamak için gerekli işlemleri burada gerçekleştirebilirsiniz
+    LocalStorageHelper.set('order',orderDetails); //.ok önemli local a kaydettik
     console.log("Sipariş Verildi! Toplam Tutar: ", orderTotal);
   };
   return (

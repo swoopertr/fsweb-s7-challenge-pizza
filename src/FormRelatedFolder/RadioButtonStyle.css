@@ -6,6 +6,12 @@
     align-items: center; /* Align items vertically in the center */
   }
 
+  .radio-buttons-wrapper .form-check {
+    padding-left: unset !important;
+    display: flex;
+    gap: 20px;
+    width: 75px;
+  }
 .radio-buttons-wrapper .RadioButtonLabel {
     display: inline-block;
     width: 50px;

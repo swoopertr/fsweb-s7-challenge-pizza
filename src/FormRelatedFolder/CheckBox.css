@@ -1,3 +1,8 @@
+.form-check{
+  display: flex;
+  flex-direction: column;
+}
+
 .form-check-input {
     display: none; /* Hide the default checkbox */
   }
@@ -20,11 +25,16 @@
   .form-check-input:checked + .form-check-label .custom-checkbox::after {
     content: "✔"; /* Display a checkmark when checkbox is checked */
     display: block;
-    margin: 2px 0 0 2px; */
+    margin: auto; /* Center the checkmark horizontally and vertically */
+    font-size: 20px; /* Increase font size for better visibility */
   }
   
   .form-check-label {
     display: flex; /* Use flexbox for layout */
     align-items: center; /* Align items vertically */
     margin-bottom: 10px;
+  }
+/* https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+  #topping-list{
+    padding-left: unset;
   }
