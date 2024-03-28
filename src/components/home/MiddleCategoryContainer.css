@@ -66,6 +66,7 @@
   .ulContainer {
     display: flex;
     justify-content: space-between;
+    margin: 0px 80px;
 }
 
 .category-containerbottomText{
