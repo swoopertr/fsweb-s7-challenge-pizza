@@ -8,6 +8,7 @@
     padding-bottom: 15px;
     background-color: white;
     width: auto;
+    text-decoration: none;
 }
 
 .category-items{
@@ -15,10 +16,26 @@
     gap: 5px;
     height: max-content;
     align-items: center;
+    text-decoration: none;
 }
 
-a {
+.category-items a {
     text-decoration: none;
     color: black;
     font-family: "Barlow";
+}
+
+.category-containerbottom {
+    display: flex;
+    align-items: center;
+    cursor: pointer; 
+    padding: 7px; 
+    border-radius: 10px; 
+    transition: background-color 0.3s;
+    border-radius: 60px;
+    background-color: #fff;
+  }
+
+  .category-containerbottom:hover {
+    background-color: #292929; /* Change background color on hover */
 }
