@@ -1,15 +1,10 @@
-
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import workintech from "/workintech.svg";
 import Home from "./components/home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PizzaOrderForm from "./components/Pizzaorder";
 import Success from "./components/success/Success";
-import './App.css'
 import ConsolidatedFormComponent from './FormRelatedFolder/ConsolidatedFormComponent'
 import 'bootstrap/dist/css/bootstrap.min.css';
- 
+
 
 function App() {
   return (
@@ -19,14 +14,14 @@ function App() {
           <Route exact path="/">
             <Home />
           </Route>
-    <ConsolidatedFormComponent path="/pizzaorder" />      
-     <Route exact path="/pizzaorder">
+          <ConsolidatedFormComponent path="/pizzaorder" />
+          <Route exact path="/pizzaorder">
             <PizzaOrderForm />
             {/* buraya pizza sipariş formu gelecek. */}
-            
+
           </Route>
           <Route exact path="/success">
-          <Success/>
+            <Success />
           </Route>
         </Switch>
       </Router>
