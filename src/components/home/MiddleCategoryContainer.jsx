@@ -10,10 +10,10 @@ const MiddleCategoryContainer = (props) => {
                 <div>
                     <MiddleCategoryTitle mainTitle="en çok paketlenen menüler" regularTitle="Acıktıran Kodlara Doyuran Lezzetler" />
                 </div>
-                <div>
+                <div className="deneme">
                     <MiddleCategory />
+                    </div>
                 </div>
-            </div>
         </>
     );
 }

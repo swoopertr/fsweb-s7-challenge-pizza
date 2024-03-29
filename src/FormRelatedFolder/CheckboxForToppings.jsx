@@ -37,9 +37,9 @@ throw new Alert("Üzerine Tarçın da üfeleyelim mi küçük ayı? ")
   };
 
   return (
-    <div>
-      <h1>Ek Malzemeler</h1>
-      <h2>En fazla 10 malzeme seçebilirsiniz. 5₺ </h2>
+    <div className="toppings-section">
+      <h1 className="size-font">Ek Malzemeler</h1>
+      <h2 className="topping-warning-font">En fazla 10 malzeme seçebilirsiniz. 5₺ </h2>
       <div className="malzemecontainer">
         {toppings.map((topping) => (
           <Checkbox

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Foodcategories.css"
+
 import Svg1 from './../../assets/icons/1.svg';
 import Svg2 from './../../assets/icons/2.svg';
 import Svg3 from './../../assets/icons/3.svg';

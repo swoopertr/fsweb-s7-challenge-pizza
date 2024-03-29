@@ -3,8 +3,12 @@ import "./success.css";
 import SuccessTitle from "./SuccessTitle";
 import SuccessAbout from "./SuccessAbout";
 import SuccessResult from "./SuccessResult";
+import LocalStorageHelper from "../../Util/LocalStorageHelper";
 
 const Success = () => {
+
+  let customerOrderDetail = LocalStorageHelper.get('order');
+  console.log('customerOrderDetail : ', customerOrderDetail);
   return (
     <div className="success-container">
       <SuccessTitle />
@@ -21,6 +25,7 @@ const Success = () => {
         </svg>
       </div>
       <SuccessAbout />
+      
       <SuccessResult />
     </div>
   );

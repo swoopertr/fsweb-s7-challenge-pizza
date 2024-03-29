@@ -10,7 +10,7 @@ const Checkbox = ({ id, label, checked, onChange }) => {
   };
 
   return (
-    <div className={`form-check ${isChecked ? 'checked' : ''}`}>
+    <div id='topping-list' className={`form-check ${isChecked ? 'checked' : ''}`}>
       <input
         className="form-check-input"
         type="checkbox"

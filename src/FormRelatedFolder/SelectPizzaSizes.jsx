@@ -5,14 +5,14 @@ import RadioButtons from './RadioButtons.jsx';
 const SelectPizzaSizes = (props) => {
  
   const handleRadioChange = (event) => {
-    console.log("data-value : ", event.target.getAttribute("data-value"));
+    console.log("SelectPizzaSizes : ", event.target.getAttribute("data-value"));
     props.RadioButtonSelected(event.target.getAttribute("data-value"));
   };
 
   return (
     <div className="select-pizza-container">
       <div className="select-pizza-radio-buttons">
-        <p>Boyut Seç*</p>
+        <p className='size-font'>Boyut Seç<span className='red-mark'>*</span></p>
         <div className="radio-buttons-wrapper">
           <RadioButtons
             id="radioOption1"
