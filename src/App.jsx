@@ -6,7 +6,6 @@ import Home from "./components/home/Home";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import PizzaOrderForm from "./components/Pizzaorder";
 import Success from "./components/success/Success";
-import './App.css'
 import ConsolidatedFormComponent from './FormRelatedFolder/ConsolidatedFormComponent'
 import 'bootstrap/dist/css/bootstrap.min.css';
  
