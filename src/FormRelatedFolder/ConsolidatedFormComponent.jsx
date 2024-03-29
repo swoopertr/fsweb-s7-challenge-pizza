@@ -13,15 +13,17 @@ import SelectPizzaSizes from "./SelectPizzaSizes";
 import "./RadioButtonStyle.css";
 
 const ConsolidatedFormComponent = () => {
-  const [selectedOption, setSelectedOption] = useState("");
+  const [OrderNoteContent, setOrderNoteContent] = useState("");
   const [orderCount, setOrderCount] = useState(0); // Eklendi
   const [pizzaSizes, setPizzaSizes] = useState(""); //pizza boyutu
   const [selectionTotal, setSelectionTotal] = useState(0);
   const [selectedToppings, setSelectedToppings] = useState([]);
   const [selectedDough, setSelectedDough] = useState("ince");
+  
 
-  const handleOrderCountChange = (count) => {
-    setOrderCount(count); // OrderCount bileşeninden gelen sayı değişikliğini yakala
+  const handleOrderNoteContent = (e) => {
+    let catcher = e.target.value
+  setOrderNoteContent(catcher)
   };
 
   const handleToppingsChange = (selectedToppings) => {
@@ -42,6 +44,8 @@ const ConsolidatedFormComponent = () => {
     setSelectedDough(selectedDoughType);
   };
 
+
+
   return (
     <>
       <div className="form-top-section">
@@ -56,7 +60,9 @@ const ConsolidatedFormComponent = () => {
           <ToppingsCheckboxGroup onChange={handleToppingsChange} />
         </div>
         <div className="ordernote-container">
-          <OrderNote />
+          <OrderNote
+          onChange={handleOrderNoteContent}
+          />
         </div>
         <div>
           {/* onCountChange prop'u ekleniyor */}
@@ -67,6 +73,7 @@ const ConsolidatedFormComponent = () => {
             size={pizzaSizes}
             doughType={selectedDough}
             selectedPizza={""}
+            OrderNote={OrderNoteContent}
           />
         </div>
       </div>

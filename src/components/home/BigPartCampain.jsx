@@ -8,7 +8,11 @@ const BigPartCampain = () => {
         <div className="big-part-items">
           <h2 className="bigcampain-text">Özel Lezzetus</h2>
           <p className="big-part-text">Position:Absolute Acı Burger</p>
+          <Link to="/pizzaorder">
           <button className="bigcampain-button">SİPARİŞ VER</button>
+        </Link>
+          
+        
         </div>
       </div>
     </>

@@ -1,7 +1,10 @@
 .order-summary-total {
   display: flex;
   justify-content: center; /* Bileşenleri yatay olarak sayfanın ortasına hizalar */
-  align-items:baseline; /* Bileşenleri dikey olarak sayfanın üst kısmına hizalar */
+  align-items:flex-start; /* Bileşenleri dikey olarak sayfanın üst kısmına hizalar */
+  align-content: space-around;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
 
 .red-total {
@@ -19,6 +22,7 @@
   background-color: #FAF7F2;
   position: relative; /* Konumlandırma için */
   text-align:start;
+  font-family: "Quattrocento";
 
 }
 
@@ -41,9 +45,8 @@
 }
 
 .order-sum-container button:hover {
-  background-color: #0056b3;
+  background-color: #5F5F5F;
 }
-
 
 .selection-label {
   display: flex;
@@ -54,4 +57,13 @@
   margin-left: auto;
 }
 
+.selection-label-wrapper{
+  
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+}
 

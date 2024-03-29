@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./CheckBox.css"
-const Checkbox = ({ id, label, checked, onChange }) => {
+const Checkbox = ({ id, label, checked, onChange, disabled }) => {
   const [isChecked, setIsChecked] = useState(checked);
 
   const handleChange = (event) => {
@@ -17,6 +17,7 @@ const Checkbox = ({ id, label, checked, onChange }) => {
         id={id}
         checked={isChecked}
         onChange={handleChange}
+        disabled={disabled}
       />
       <label className="form-check-label" htmlFor={id}>
         <span className="custom-checkbox"></span> {label}

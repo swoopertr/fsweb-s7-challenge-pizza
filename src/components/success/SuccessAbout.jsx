@@ -28,6 +28,9 @@ const SuccessAbout = () => {
         <h3 className="SuccessAboutH3">
           Ek Malzemeler: <span className="SuccessAboutSpan">  {<span>{pizzaDetails.selectedToppings}</span>}</span> 
         </h3> 
+        <h3 className="SuccessAboutH3">
+          Sipariş Notu: <span className="SuccessAboutSpan">  {<span>{pizzaDetails.OrderNote}</span>}</span> 
+        </h3>
       </div>
     </div>
   );

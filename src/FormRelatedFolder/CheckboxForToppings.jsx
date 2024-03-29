@@ -20,6 +20,7 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
     { id: "soğan", label: "Soğan" },
     { id: "sarımsak", label: "Sarımsak" },
   ];
+  const [showAlert, setShowAlert] = useState(false);
 
   const handleChange = (toppingId, isChecked) => {
     const updatedToppingsState = { ...toppingsState, [toppingId]: isChecked };
@@ -29,30 +30,42 @@ const ToppingsCheckboxGroup = ({ onChange }) => {
       (key) => updatedToppingsState[key]
     );
 
-if (selectedToppings.length >= 10) {
-throw new Alert("Üzerine Tarçın da üfeleyelim mi küçük ayı? ")
+
+
+
+if (selectedToppings.length === 10) {
+  setShowAlert(true); // Show the alert
+} else {
+  setShowAlert(false); // Hide the alert if previously shown
 }
 
-    onChange(selectedToppings);
-  };
+onChange(selectedToppings);
+};
 
-  return (
-    <div className="toppings-section">
-      <h1 className="size-font">Ek Malzemeler</h1>
-      <h2 className="topping-warning-font">En fazla 10 malzeme seçebilirsiniz. 5₺ </h2>
-      <div className="malzemecontainer">
-        {toppings.map((topping) => (
-          <Checkbox
-            key={topping.id}
-            id={topping.id}
-            label={topping.label}
-            checked={toppingsState[topping.id] || false}
-            onChange={(e) => handleChange(topping.id, e.target.checked)}
-          />
-        ))}
-      </div>
+return (
+  <div className="toppings-section">
+    <h1 className="size-font">Ek Malzemeler</h1>
+    <h2 className="topping-warning-font">En fazla 10 malzeme seçebilirsiniz. 5₺ </h2>
+   
+    <div className="malzemecontainer">
+      {toppings.map((topping) => (
+        <Checkbox
+          key={topping.id}
+          id={topping.id}
+          label={topping.label}
+          checked={toppingsState[topping.id] || false}
+          onChange={(e) => handleChange(topping.id, e.target.checked)}
+          disabled={
+            Object.keys(toppingsState).filter(
+              (key) => toppingsState[key]
+            ).length === 10 && !toppingsState[topping.id]
+          }
+        />
+      ))}
     </div>
-  );
+    {showAlert && <div className="alert">Maksimum Seçme Sayısına Ulaştın Küçük Ayı</div>}
+  </div>
+);
 };
 
 export default ToppingsCheckboxGroup;
