@@ -19,7 +19,7 @@ const OrderCount = ({initialCount, onCountChange }) => {
   return (
     <div className="order-count-container">
       <button onClick={handleDecrement}>-</button>
-      <span>{initialCount}</span>
+      <span id="order-count">{initialCount}</span>
       <button onClick={handleIncrement}>+</button>
     </div>
   );
