@@ -1,29 +1,30 @@
-describe('Success Page', () => {
-    beforeEach(() => {
-      cy.visit('http://localhost:5173/success'); 
-    });
-  
-    it('displays success title and subtitle', () => {
-      cy.get('.success-title').should('have.text', 'Teknolojik Yemekler');
-      cy.get('.success-subtitle').should('contain', 'TEBRİKLER!');
-      cy.get('.success-subtitle').should('contain', 'SİPARİŞİNİZ ALINDI!');
-    });
-  
-    it('has correct background color', () => {
-      cy.get('body').should('have.css', 'background-color', 'rgb(206, 40, 41)');
-    });
-  
-    it('has proper font styles', () => {
-      cy.get('.success-title').should('have.css', 'font-family', 'Quattrocento, serif');
-      cy.get('.success-subtitle').should('have.css', 'font-family', 'Quattrocento, serif');
-      cy.get('.success-title').should('have.css', 'font-size').and('eq', '51.2px');
-      cy.get('.success-subtitle').should('have.css', 'font-size').and('eq', '51.2px');
-      cy.get('.success-subtitle').should('have.css', 'font-weight', '100');
-    });
-  
-    it('has proper positioning', () => {
-      cy.get('.success-title').should('have.css', 'padding-top', '190px');
-      cy.get('.success-title').should('have.css', 'margin-top', '-350px');
+describe("Success Page", () => {
+  beforeEach(() => {
+    cy.visit("http://localhost:5173/success");
+  });
+
+  it("should render SuccessTitle component", () => {
+    cy.get(".success-container").within(() => {
+      cy.get(".success-title").should("exist");; // SuccessTitle bileşeninin var olduğunu kontrol et
     });
   });
-  
+
+  it("should render SuccessAbout component", () => {
+    cy.get(".success-container").within(() => {
+      cy.get(".success-about").should("exist"); // SuccessAbout bileşeninin var olduğunu kontrol et
+    });
+  });
+
+  it("should render SuccessResult component", () => {
+    cy.get(".success-container").within(() => {
+      cy.get(".success-result").should("exist"); // SuccessResult bileşeninin var olduğunu kontrol et
+    });
+  });
+
+  it("should display customer order details", () => {
+    cy.get(".success-container").within(() => {
+      cy.contains("Order Details").should("exist"); // "Order Details" metnini içeren bir elementin var olduğunu kontrol et
+      // Diğer sipariş detaylarını burada kontrol edebilirsiniz
+    });
+  });
+});

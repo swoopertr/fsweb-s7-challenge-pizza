@@ -1,6 +1,6 @@
 describe("Home Page", () => {
   beforeEach(() => {
-    cy.visit("http://localhost:5173/");
+    cy.visit("http://localhost:5173");
   });
 
   it("basic test", () => {
@@ -24,7 +24,7 @@ describe("Home Page", () => {
     cy.get(".foodItemsFrame").should("have.length", 3);
   });
 
-  User;
+
   it("check home-button clickTest", () => {
     cy.get(".home-button").click();
     cy.url().should("include", "/pizzaorder"); //include içermek olarak kullanılıyor. Yani butona tıkladığımızda url  /pizzaorder ı içeriyor mu demek oluyor
